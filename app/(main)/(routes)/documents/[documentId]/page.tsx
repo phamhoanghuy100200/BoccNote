@@ -9,15 +9,11 @@ import { useMutation, useQuery } from "convex/react";
 import { useMemo } from "react";
 import { useParams } from "next/navigation";
 
-interface DocumentIdPageProps {
-    params: {
-        documentId: Id<"documents">
-    }
-}
+
 
 const DocumentIdPage = ({
-    params
-}: DocumentIdPageProps) => {
+
+}) => {
     const Editor = useMemo(() => dynamic(() => import("@/components/editor"), { ssr: false }), [])
     const update = useMutation(api.documents.update);
     const param = useParams()
@@ -27,7 +23,7 @@ const DocumentIdPage = ({
 
     const onChange = (content: string) => {
         update({
-            id: params.documentId,
+            id: param.documentId as Id<"documents">,
             content
         })
     }
