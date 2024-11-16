@@ -10,7 +10,6 @@ import Banner from "./banner";
 import Menu from "./menu";
 import Publish from "./publish";
 import { cn } from "@/lib/utils";
-import Logo from "@/app/(marketing)/_components/logo";
 
 interface NavbarProps {
     isCollapsed: boolean,

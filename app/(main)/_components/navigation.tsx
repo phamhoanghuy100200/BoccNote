@@ -1,6 +1,6 @@
 "use client";
 
-import { ChevronLeft, MenuIcon, Plus, PlusCircle, Search, Settings, Trash } from "lucide-react";
+import { ChevronLeft, MenuIcon, Plus, PlusCircle, Search, Trash } from "lucide-react";
 import { useParams, usePathname, useRouter } from "next/navigation";
 import { ElementRef, useEffect, useRef, useState } from "react";
 import { useMediaQuery } from "usehooks-ts";

@@ -18,7 +18,6 @@ interface DocumentListProps {
 const DocumentList = ({
     parentDocumentId,
     level = 0,
-    data,
 }: DocumentListProps) => {
     const params = useParams();
     const router = useRouter();

@@ -9,11 +9,7 @@ import { useMutation, useQuery } from "convex/react";
 import { useMemo } from "react";
 import { useParams } from "next/navigation";
 
-interface DocumentIdPageProps {
-    params: {
-        documentId: Id<"documents">
-    }
-}
+
 
 const DocumentIdPage = ({
 }) => {
